@@ -3,51 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice</title>
+    <title>Cat</title>
     <style>
-        .container {
-            margin-left: 100px;
-            display: inline-block;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        .container-box {
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            column-gap: 16px;
         }
-            
-
-        .names {
-            font-size: x-large;
-            font-weight: bold;
-            padding-left: 5px;   
-            margin-top: 3px; 
-            margin-bottom: 0px;
-
+        .box-cards {
+            box-shadow:  1px 1px 7px;
+        }
+        .main-pic {
+            width: 100%;
+        }
+        .profile-info {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            column-gap: 8px;
         }
         .profile-pic {
-            width: 200px;
-
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
         }
-        .friends {
-            color: rgb(99, 99, 99);
-            padding-left: 5px; 
-            margin-top: 0px;   
-
-        }
-        .add-button {
-            border: solid;
-            border-radius: 8px;
-            background-color: rgb(42, 112, 242);
+        button {
+            margin: 10px 10px 20px 20px;
+            width: 120px;
+            height: 35px;
+            border: 0;
+            border-radius: 7px;
             color: white;
-            padding: 10px 15px;
-            margin-left: 3px;
-            margin-bottom: 6px;
-            font-size: medium;
+            background-color: rgb(19, 102, 255);
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img class="profile-pic" src="https://bestfriends.org/sites/default/files/styles/hero_mobile/public/hero-dash/Asana3808_Dashboard_Standard.jpg?h=ebad9ecf&itok=cWevo33k">
-        <p class="names">Oliver</p>
-        <p class="friends">2 mutual friends</p>
-        <button class="add-button"> Add Friends</button>
+    <div class="container-box">
+        <div class="box-cards">
+            <img class="main-pic" src="https://ichef.bbci.co.uk/images/ic/1040x1040/p0j1g3vb.jpg" alt="">
+            <div class="description-box">
+                <h2>Oilvier</h2>
+                <div class="profile-info">
+                    <div><img class="profile-pic" src="https://ichef.bbci.co.uk/images/ic/1040x1040/p0j1g3vb.jpg" alt=""></div>
+                    <div>
+                        <p style="color: rgb(160, 160, 160);">2 mutual friends</p>
+                    </div>
+                </div>
+                <button> Add Friends</button>
+            </div>
+        </div>
+        <div class="container-box">
+            <div class="box-cards">
+                <img class="main-pic" src="https://ichef.bbci.co.uk/images/ic/1040x1040/p0j1g3vb.jpg" alt="">
+                <div class="description-box">
+                    <h2>Oilvier</h2>
+                    <div class="profile-info">
+                        <div><img class="profile-pic" src="https://ichef.bbci.co.uk/images/ic/1040x1040/p0j1g3vb.jpg" alt=""></div>
+                        <div>
+                            <p style="color: rgb(160, 160, 160);">2 mutual friends</p>
+                        </div>
+                    </div>
+                    <button> Add Friends</button>
+                </div>
+            </div>
+            <div class="container-box">
+                <div class="box-cards">
+                    <img class="main-pic" src="https://ichef.bbci.co.uk/images/ic/1040x1040/p0j1g3vb.jpg" alt="">
+                    <div class="description-box">
+                        <h2>Oilvier</h2>
+                        <div class="profile-info">
+                            <div><img class="profile-pic" src="https://ichef.bbci.co.uk/images/ic/1040x1040/p0j1g3vb.jpg" alt=""></div>
+                            <div>
+                                <p style="color: rgb(160, 160, 160);">2 mutual friends</p>
+                            </div>
+                        </div>
+                        <button> Add Friends</button>
+                    </div>
+                </div>
     </div>
 </body>
 </html>
