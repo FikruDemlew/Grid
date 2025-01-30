@@ -39,8 +39,9 @@
     width: 40px;
 }
 .video-row {
+    margin-right: 25px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 16px;
     row-gap: 40px;
 }

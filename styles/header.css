@@ -1,22 +1,51 @@
 .header {
-    height: 50px;
+    margin-right: 25px;
+    height: 55px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 } 
 .left-content {
+    display: flex;
+    flex-direction: row;
     width: 100px;
-    background-color: lightblue;
 }
 .middle-content {
-    background-color: lightpink;
+    display: flex;
     flex: 1;
+    align-items: center;
     margin-right: 35px;
     margin-left: 70px;
-    max-width: 600px;
+    max-width: 500px;
 
 }
 .right-content {
+    justify-items: end;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: lightblue;
     width: 210px;
+}
+.main-pic {
+    border-radius: 50%;
+    height: 35px;
+}
+input { 
+    border: 1px solid;
+    border-color: rgb(189, 189, 189);
+    width: 370px;
+    height: 40px;
+}
+.microphone {
+    margin-left: 30px;
+}
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-color: rgb(189, 189, 189);
+    width: 40px;
+    height: 40px;
 }
